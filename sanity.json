@@ -1,11 +1,11 @@
 {
   "root": true,
-  "project": {
-    "name": "at-mah-studio"
-  },
   "api": {
     "projectId": "gweriub1",
     "dataset": "production"
+  },
+  "project": {
+    "name": "at-mah-studio"
   },
   "plugins": [
     "@sanity/base",
