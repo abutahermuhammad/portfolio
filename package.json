@@ -11,7 +11,7 @@
     "build": "sanity build"
   },
   "keywords": [
-    "sanity", "abu taher muhammad"
+    "sanity", "abu taher muhammad", "portfolio"
   ],
   "dependencies": {
     "@sanity/base": "^2.30.1",
