@@ -1,0 +1,35 @@
+{
+  "root": true,
+  "project": {
+    "name": "at-mah-studio"
+  },
+  "api": {
+    "projectId": "gweriub1",
+    "dataset": "production"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool",
+    "@sanity/code-input",
+    "pdf-generator"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    },
+    {
+      "implements": "part:@sanity/base/document-badges/resolvers",
+      "path": "plugins/badge/resolveDocumentBadges.js"
+    }
+  ]
+}
