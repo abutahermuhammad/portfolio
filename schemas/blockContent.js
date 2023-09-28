@@ -62,7 +62,16 @@ export default {
 		// as a block type.
 		{
 			type: "image",
-			options: { hotspot: true },
+			options: {
+				hotspot: true,
+				imageHotspot: {
+					// see `Image and description path` setup below
+					imagePath: `featureImage`,
+					descriptionPath: `details`,
+					// see `Custom tooltip` setup below
+					tooltip: undefined,
+				  }
+			},
 			fields: [
 				{
 					name: "caption",
@@ -85,5 +94,10 @@ export default {
 			type: "code",
 			title: "Code",
 		},
+		{
+			name: 'sizeChart',
+			title: 'Size Chart',
+			type: 'table',
+		  },
 	],
 };
